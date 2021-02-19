@@ -14,11 +14,17 @@ function Row(props: any) {
     }
 
     const row: any = squares.map(square => (
-      <Square key={square.toString()} id={square.toString()} />
+      <Square
+        key={square.toString()}
+        id={square.toString()}
+        rowId={props.id.toString()}
+      />
     ));
+
+    return row;
   }
 
-  return <div className={props.id.toString()}></div>;
+  return <div className={["row", props.id.toString()].join(" ")}>{row}</div>;
 }
 
 export default Row;

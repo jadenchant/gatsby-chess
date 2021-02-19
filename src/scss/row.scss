@@ -1,1 +1,8 @@
 @import "_config.scss";
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}

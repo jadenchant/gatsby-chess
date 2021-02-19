@@ -4,4 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
+.board {
+  display: flexbox;
+  width: 100%;
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+}
 /*# sourceMappingURL=board.css.map */

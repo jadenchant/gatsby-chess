@@ -5,15 +5,22 @@ function Square(props: any) {
   const color: string = findColor();
 
   function findColor(): string {
-    console.log(props.id);
-    if (props.id % 2) {
-      return "white";
+    if (props.rowId % 2) {
+      if (props.id % 2) {
+        return "white";
+      } else {
+        return "black";
+      }
     } else {
-      return "black";
+      if (props.id % 2) {
+        return "black";
+      } else {
+        return "white";
+      }
     }
   }
 
-  return <div className={color}></div>;
+  return <div className={["square", color, props.id].join(" ")}></div>;
 }
 
 export default Square;
