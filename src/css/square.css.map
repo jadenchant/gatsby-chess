@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;ADLD,AACE,OADK,CACL,MAAM,CAAC;EACL,gBAAgB,ECHZ,OAAO;CDIZ;;AAHH,AAKE,OALK,CAKL,MAAM,CAAC;EACL,gBAAgB,ECRZ,OAAO;CDSZ",
+    "sources": [
+        "../scss/square.scss",
+        "../scss/_config.scss"
+    ],
+    "names": [],
+    "file": "square.css"
+}

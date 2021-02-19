@@ -1,8 +1,13 @@
 import * as React from "react";
+import Board from "../components/board";
 
 // markup
 const IndexPage = () => {
-  return <h1>Hello</h1>;
+  return (
+    <main>
+      <Board />
+    </main>
+  );
 };
 
 export default IndexPage;
