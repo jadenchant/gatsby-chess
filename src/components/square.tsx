@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/square.css";
+import Piece from "./Piece";
 
 function Square(props: any) {
   const color: string = findColor();
@@ -20,7 +21,11 @@ function Square(props: any) {
     }
   }
 
-  return <div className={["square", color, props.id].join(" ")}></div>;
+  return (
+    <div className={["square", color, props.id].join(" ")}>
+      <Piece color='d' piece='q' />
+    </div>
+  );
 }
 
 export default Square;
