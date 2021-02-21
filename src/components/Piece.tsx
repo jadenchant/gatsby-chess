@@ -16,7 +16,14 @@ function Piece(props: any) {
     }
   }
 
-  return <img src={svg} alt={[color, piece, position].join(" ")}></img>;
+  return (
+    <img
+      src={svg}
+      alt={[color, piece, position].join(" ")}
+      className='piece'
+      draggable='false'
+    ></img>
+  );
 }
 
 export default Piece;

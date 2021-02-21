@@ -14,7 +14,7 @@ function Board() {
 
     const board: any = rows.map(row => <Row key={row.toString()} id={row} />);
 
-    console.log(board);
+    // console.log(board);
     return board;
   }
 

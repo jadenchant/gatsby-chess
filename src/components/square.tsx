@@ -23,7 +23,7 @@ function Square(props: any) {
 
   return (
     <div className={["square", color, props.id].join(" ")}>
-      <Piece color='d' piece='q' />
+      <Piece color='d' piece='k' position={props.id} />
     </div>
   );
 }
