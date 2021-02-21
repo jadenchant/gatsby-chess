@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-body {
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
 .contentmain {
   display: -webkit-box;
   display: -ms-flexbox;

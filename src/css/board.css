@@ -12,5 +12,7 @@
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
+  justify-items: center;
+  margin-top: 15vh;
 }
 /*# sourceMappingURL=board.css.map */

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Row from "./Row";
-import Square from "./Square";
 import "../css/board.css";
 
 function Board(props: string) {
