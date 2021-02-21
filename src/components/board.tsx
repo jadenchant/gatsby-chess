@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Row from "./Row";
 import "../css/board.css";
 
-function Board(props: string) {
+function Board() {
   const [board, setBoard] = useState(makeBoard);
 
   function makeBoard() {

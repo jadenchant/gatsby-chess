@@ -7,15 +7,15 @@ function Square(props: any) {
   function findColor(): string {
     if (props.rowId % 2) {
       if (props.id % 2) {
-        return "white";
-      } else {
         return "black";
+      } else {
+        return "white";
       }
     } else {
       if (props.id % 2) {
-        return "black";
-      } else {
         return "white";
+      } else {
+        return "black";
       }
     }
   }
