@@ -23,7 +23,7 @@ function Square(props: any) {
   }
 
   function init() {
-    let piece: string;
+    let piece: string = "";
 
     // Light or Dark Piece
     if (props.rowID === 1 || props.rowID === 2) {
@@ -34,14 +34,24 @@ function Square(props: any) {
       piece += " ";
     }
 
-    if (props.rowID === 1) {
-      if (props.id === 1 || props.id === 8) {
-        return "lr";
+    if (props.rowID === 1 || props.rowID === 8) {
+      if (props.id % 8 === 1 || props.id % 8 === 0) {
+        return piece + "r";
+      } else if (props.id % 8 === 2 || props.id % 8 === 7) {
+        return piece + "n";
+      } else if (props.id % 8 === 3 || props.id % 8 === 6) {
+        return piece + "b";
+      } else if (props.id % 8 === 4) {
+        return piece + "q";
+      } else if (props.id % 8 === 5) {
+        return piece + "k";
       } else {
         return "  ";
       }
+    } else if (props.rowID === 2 || props.rowID === 7) {
+      return piece + "p";
     } else {
-      return "  ";
+      return piece + " ";
     }
   }
 
