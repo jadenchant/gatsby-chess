@@ -14,11 +14,7 @@ function Row(props: any) {
     }
 
     const row: any = squares.map(square => (
-      <Square
-        key={square.toString()}
-        id={square.toString()}
-        rowId={props.id.toString()}
-      />
+      <Square key={square.toString()} id={square} rowID={props.id} />
     ));
 
     return row;

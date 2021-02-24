@@ -4,4 +4,14 @@
   margin: 0;
   padding: 0;
 }
+
+.piece {
+  height: 100%;
+  width: 100%;
+}
+
+.piece img {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=piece.css.map */
