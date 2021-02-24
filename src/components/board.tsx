@@ -5,6 +5,7 @@ import "../css/board.css";
 function Board() {
   const [board, setBoard] = useState(makeBoard);
 
+  // Creates the inital board
   function makeBoard() {
     let rows: number[] = [];
 

@@ -5,6 +5,7 @@ import "../css/row.css";
 function Row(props: any) {
   const [row, setRow] = useState(makeRow);
 
+  // Creates the inital row
   function makeRow() {
     let squares: number[] = [];
     const startingIndex: number = (props.id - 1) * 8 + 1;

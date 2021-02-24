@@ -8,6 +8,7 @@ function Piece(props: any) {
     "/pieces/" + findSVG() + "/Chess_" + piece + color + "t45.svg";
   const [position, setPosition] = useState(props.position);
 
+  // Finds the svg location
   function findSVG() {
     if (color === "l") {
       return "white";
@@ -16,6 +17,7 @@ function Piece(props: any) {
     }
   }
 
+  // Checks if the space has a piece or not
   function checkSpace() {
     if (color === " ") {
       return <div className='nopiece'></div>;

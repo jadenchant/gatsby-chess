@@ -6,6 +6,7 @@ function Square(props: any) {
   const color: string = findColor();
   const [piece, setPiece] = useState(init());
 
+  // Calculates the Square Color
   function findColor(): string {
     if (props.rowID % 2) {
       if (props.id % 2) {
@@ -22,6 +23,7 @@ function Square(props: any) {
     }
   }
 
+  // Initial Game Setup
   function init() {
     let piece: string = "";
 
@@ -34,6 +36,7 @@ function Square(props: any) {
       piece += " ";
     }
 
+    // Piece Type
     if (props.rowID === 1 || props.rowID === 8) {
       if (props.id % 8 === 1 || props.id % 8 === 0) {
         return piece + "r";
@@ -45,8 +48,6 @@ function Square(props: any) {
         return piece + "q";
       } else if (props.id % 8 === 5) {
         return piece + "k";
-      } else {
-        return "  ";
       }
     } else if (props.rowID === 2 || props.rowID === 7) {
       return piece + "p";
