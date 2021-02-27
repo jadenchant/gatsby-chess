@@ -56,8 +56,16 @@ function Square(props: any) {
     }
   }
 
+  function handleClick(e: any) {
+    console.log(piece + props.id);
+  }
+
   return (
-    <div className={["square", color, props.id].join(" ")}>
+    <div
+      className={["square", color, props.id].join(" ")}
+      onClick={handleClick}
+    >
+      {/* <div className='overlay'></div> */}
       <Piece color={piece[0]} piece={piece[1]} position={props.id} />
     </div>
   );

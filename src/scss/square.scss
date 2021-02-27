@@ -14,4 +14,11 @@
     width: 9vh;
     background-color: $white;
   }
+
+  .overlay {
+    position: fixed;
+    height: 9vh;
+    width: 9vh;
+    z-index: +2;
+  }
 }
